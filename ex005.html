@@ -17,6 +17,20 @@
     <h1>iniciando os estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em javascript</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
+    <img src="arvoreDOM.PNG">
+    <script>
+        var corpo = window.document.body
+        corpo.style.backgroundColor = 'pink'
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write(p1.innerText);
+        p1.style.color = 'red'
+
+        var d = window.document.getElementById('msg')
+        d.style.backgroundColor = 'green'
+
+        var q = window.document.querySelector('div#msg')
+        q.style.backgroundColor = 'purple'
+    </script>
 </body>
 </html>
